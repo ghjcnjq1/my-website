@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Админ-панель</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="admin.html">Админ-панель</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="admin">
+            <h2>Добавить баннер</h2>
+            <form id="banner-form">
+                <label for="banner-image">Изображение баннера:</label>
+                <input type="file" id="banner-image" name="banner-image" accept="image/*" required>
+                <label for="banner-size">Размер баннера:</label>
+                <select id="banner-size" name="banner-size" required>
+                    <option value="468x60">468 x 60</option>
+                    <option value="1000x90">1000 x 90</option>
+                    <option value="728x90">728 x 90</option>
+                    <option value="600x90">600 x 90</option>
+                    <option value="300x250">300 x 250</option>
+                    <option value="250x250">250 x 250</option>
+                    <option value="240x400">240 x 400</option>
+                    <option value="234x60">234 x 60</option>
+                    <option value="200x300">200 x 300</option>
+                    <option value="200x200">200 x 200</option>
+                    <option value="160x600">160 x 600</option>
+                    <option value="150x150">150 x 150</option>
+                    <option value="125x125">125 x 125</option>
+                    <option value="120x600">120 x 600</option>
+                    <option value="100x100">100 x 100</option>
+                </select>
+                <button type="submit">Добавить</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Баннеры. Все права защищены.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
